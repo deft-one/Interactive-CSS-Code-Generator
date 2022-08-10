@@ -1,0 +1,127 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 1em;
+    background-color: rgb(31, 31, 31);
+}
+
+h1 {
+    max-width: 400px;
+    margin: 1em auto;
+    text-align: center;
+    color: white;
+}
+
+#container, #container2, #container3 {
+    width: 100%;
+    max-width: 400px;
+    margin: 2em auto;
+}
+
+#container {
+    position: relative;
+    height: 400px;
+    border: 2px solid rgb(84, 84, 84);
+}
+
+#container2 {
+    display: grid;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#container3 {
+    padding: 1em;
+}
+
+#box {
+    position: absolute;
+      top: 40%;
+      left: 40%;
+    background-color: rgb(97, 129, 255);
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    transition: all 200ms ease;
+}
+
+#error {
+    position: absolute;
+    bottom: 0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0.25em 0.5em;
+    color: rgb(255, 76, 76);
+    transform: rotate(20deg);
+}
+
+input {
+    grid-column: 2;
+    width: 50px;
+    display: block;
+    margin: 10px 10px 10px 10px;
+    padding: 0.25em;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+input:focus {
+    outline: 2px solid rgb(121, 221, 121);
+}
+
+div > div {
+    grid-column: 1;
+    text-align: right;
+    margin: 10px 10px 10px 10px;
+    padding: 0.25em;
+}
+
+span {
+    display: block;
+    font-family:'Courier New';
+    line-height: 1.5;
+}
+
+span > span {
+    display: inline;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.property {
+    margin-left: 2em;
+    color: rgb(110, 192, 255);
+}
+
+.selector {
+    margin: 0;
+    color: rgb(255, 205, 134);
+}
+
+.valueRed {
+    color: rgb(197, 106, 92);
+}
+
+.valueGreen {
+    color: rgb(161, 209, 138);
+}
+
+.valueYellow {
+    color: rgb(240, 240, 122);
+}

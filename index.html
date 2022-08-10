@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Practice Space</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Interactive CSS Code Generator</h1>
+        <div id="container">
+            <div id="box"></div>
+        <div id="error"></div>
+        </div>
+        <div id="container2">
+            <div for="inputY">Y Position(%):</div>
+            <input id="inputY" type="text" value="40">
+            <div for="inputX">X Position(%):</div>
+            <input id="inputX" type="text" value="40">
+            <div for="inputWidth">Width(px):</div>
+            <input id="inputWidth" type="text" value="100">
+            <div for="inputHeight">Height(px):</div>
+            <input id="inputHeight" type="text" value="100">
+            <div for="inputRotate">Rotate Degrees:</div>
+            <input id="inputRotate" type="text" value="0">
+            <div for="inputBorderRadius">Border Radius(px):</div>
+            <input id="inputBorderRadius" type="text" value="0">
+        </div>
+        <div id="container3">
+            <p class="code">
+                <span class="selector">#box {</span>
+
+                <span class="property">position<span>:</span>
+                    <span class="valueRed">absolute</span><span>;</span>
+                </span>
+
+                <span class="property">top<span>:</span>
+                    <span id="yPos" class="valueGreen">40%</span><span>;</span>
+                </span>
+
+                <span class="property">left<span>:</span>
+                    <span id="xPos" class="valueGreen">40%</span><span>;</span>
+                </span>
+
+                <span class="property">width<span>:</span>
+                    <span id="width" class="valueGreen">100px</span><span>;</span>
+                </span>
+
+                <span class="property">height<span>:</span>
+                    <span id="height" class="valueGreen">100px</span><span>;</span>
+                </span>
+
+                <span class="property">transform<span>:</span>
+                    <span class="valueYellow">rotate(<span id="rotate" class="valueGreen">0deg</span>)</span><span>;</span>
+                </span>
+
+                <span class="property">border-radius<span>:</span>
+                    <span id="bordRad" class="valueGreen">0px</span><span>;</span>
+                </span>
+
+                <span class="selector">}</span>
+            </p>
+        </div>
+        <script src="script.js" ></script>
+    </body>
+</html>
